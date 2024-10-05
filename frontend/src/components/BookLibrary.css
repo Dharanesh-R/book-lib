@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #d3aeae; /* Changed to a light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+.library-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header and Buttons */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+button.primary:hover {
+    background-color: #0056b3;
+}
+
+button.secondary {
+    background-color: #28a745;
+    color: white;
+}
+
+button.secondary:hover {
+    background-color: #1e7e34;
+}
+
+button.danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.danger:hover {
+    background-color: #c82333;
+}
+
+/* Search and Form Styles */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #CADCFC; /* Changed to a teal background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #3fc65c; /* Darker border color */
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #00246b; /* Darker teal for the button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #e12424; /* Even darker teal on hover */
+}
+
+/* Add/Edit Book Form Styles */
+.add-book-form, .edit-book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.book-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Book List Styles */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-image {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.no-image-placeholder {
+    background-color: #debfbf;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* Table Styles */
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.book-table th, .book-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #b63535;
+}
+
+.book-table th {
+    background-color: #7297d7;
+}
+
+.book-table tr:hover {
+    background-color: #b4c7dd;
+}
+
+/* Logout Button */
+.logout-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    /* background-color: #e5e0e0; */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #dfd5d6;
+}
