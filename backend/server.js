@@ -460,6 +460,16 @@ app.delete('/users/email/:email/wishlist/:bookId', async (req, res) => {
     }
 });
 
+app.get('/categories', async (req, res) => {
+    try {
+        const categories = await Book.distinct('category'); // Fetch distinct categories from the 'category' field in the Book collection
+        res.json(categories); // Return the categories as a JSON array
+    } catch (err) {
+        console.error('Error fetching categories:', err);
+        res.status(500).json({ message: 'Error fetching categories', error: err.message });
+    }
+});
+
 // Other routes...
 
 app.listen(5000, () => {

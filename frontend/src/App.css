@@ -138,12 +138,16 @@ th, td {
 }
 
 th {
-  background-color: #f4a261;
-  color: #fff;
+  background-color: #000;
+  color: #c7c7c7;
 }
 
 tr:hover {
-  background-color: #f1f1f1;
+  background-color: #d8d8d8;
+}
+
+tr {
+  background-color: #c7c7c7;
 }
 
 .book-list h3 {
